@@ -41,7 +41,7 @@ export function SheetDemo() {
 
           <div className="flex flex-col gap-3 h-screen">
             {navLinks.map((link) => (
-              <SheetClose asChild>
+              <SheetClose asChild key={link.url}>
                 <Link
                   href={link.url}
                   key={link.label}
